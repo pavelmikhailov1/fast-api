@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  ta-worker:
+    build: .
+    volumes:
+      - .:/usr/ta-worker
+    env_file:
+      - .env
